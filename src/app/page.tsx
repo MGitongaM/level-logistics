@@ -1,11 +1,16 @@
-import { Button } from "@/components/ui/button";
+import BenefitSectiom from "@/components/homePage/BenefitSectiom";
+import FeatureSection from "@/components/homePage/FeatureSection";
+import HeroSection from "@/components/homePage/HeroSection";
+import QuoteSection from "@/components/homePage/QuoteSection";
 
 export default function Home() {
   return (
     <>
-      <main className="h-screen grid place-content-center">
-        <h1 className="text-4xl">Level Logistics</h1>
-        <Button>Test Button</Button>
+      <main className="">
+        <HeroSection />
+        <FeatureSection/>
+        <BenefitSectiom/>
+        <QuoteSection/>
       </main>
     </>
   );
