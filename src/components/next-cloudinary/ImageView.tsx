@@ -1,14 +1,9 @@
 'use client'
 
+import { ImageProps } from "@/types"
 import { CldImage } from "next-cloudinary"
 
- interface ImageProps{
-    imageSrc:string
-    width:number
-    height:number
-    alt:string
-    classNames:string
- }
+ 
 
 
 export default function ImageView({imageSrc,height,width,alt,classNames}:ImageProps) {
