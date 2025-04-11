@@ -5,7 +5,8 @@ export default function QuoteSection() {
   return (
     <>
         <section className="h-full bg-green-9500 py-40">
-            <div className="w-10/12 mx-auto bg-green-950 text-slate-100 rounded-xl">
+            {/* <div className="w-10/12 mx-auto bg-green-950 text-slate-100 rounded-xl"> */}
+            <div className="w-10/12 mx-auto bg-slate-950 text-slate-100 rounded-xl">
                 <div className="flex justify-between items-center px-8 py-12">
                     <div className="c">
                         <p className="text-4xl font-bold">Get Your Free Quote Today</p>

@@ -2,7 +2,8 @@ export default function Footer() {
   return (
     <>
       <footer className="conatiner px-4 py-20">
-        <div className="flex justify-between items-center bg-green-800 text-slate-100 rounded-xl px-8 py-10">
+        {/* <div className="flex justify-between items-center bg-green-800 text-slate-100 rounded-xl px-8 py-10"> */}
+        <div className="flex justify-between items-center bg-slate-800 text-slate-100 rounded-xl px-8 py-10">
           <div className="w-4/12 space-y-4">
             <p className="text-5xl leading-12">
               Your Trusted Partner in Logistics Solutions

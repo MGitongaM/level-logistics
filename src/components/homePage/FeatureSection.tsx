@@ -3,7 +3,8 @@ import { CalendarRange, Forklift, Users } from "lucide-react";
 export default function FeatureSection() {
   return (
     <>
-      <section className="h-screen px-4 bg-green-950">
+      {/* <section className="h-screen px-4 bg-green-950"> */}
+      <section className="h-screen px-4 bg-teal-950">
         <div className="conatiner mx-auto h-full grid place-content-center px-20">
           <div className=" w-full text-slate-100 flex justify-between items-center gap-4 ">
             <div className="w-5/12 ">
@@ -29,8 +30,7 @@ export default function FeatureSection() {
                 Specialzed Equipment Delivery for Your Needs
               </h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Officia, similique.
+              We handle all types of equipment with precision.
               </p>
             </div>
             <div className="w-3/12 space-y-4 text-balance">
@@ -39,8 +39,7 @@ export default function FeatureSection() {
                 Timely and Reliable Serice You Can Count On
               </h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Officia, similique.
+              Our punctuality sets us apart in the industry.
               </p>
             </div>
             <div className="w-3/12 space-y-4 text-balance">
@@ -49,8 +48,7 @@ export default function FeatureSection() {
                 Expert Team in Petroleum Sector at Your Service
               </h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Officia, similique.
+              Our knowledgeable team understands the complexities of the petroleum industry
               </p>
             </div>
           </div>

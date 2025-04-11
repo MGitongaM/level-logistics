@@ -4,7 +4,8 @@ import ImageView from "../next-cloudinary/ImageView";
 export default function HeroSection() {
   return (
     <>
-      <section className="h-screen bg-green-50">
+      {/* <section className="h-screen bg-green-50"> */}
+      <section className="h-screen bg-teal-100">
         <div className="container mx-auto h-full grid place-content-center">
         <div className="flex  justify-around items-center gap-2 px-4">
           <div className="text-balance w-6/12  space-y-6">

@@ -4,7 +4,8 @@ import ImageView from "../next-cloudinary/ImageView";
 export default function BenefitSectiom() {
   return (
     <>
-      <section className="min-h-screen px-4 py-20 bg-green-50">
+      {/* <section className="min-h-screen px-4 py-20 bg-green-50"> */}
+      <section className="min-h-screen px-4 py-20 bg-teal-100">
         <div className="container mx-auto h-full grid place-content-center ">
           <div className="w-11/12 mx-auto flex justify-center items-center gap-8">
             <div className="w-6/12 space-y-6">
@@ -22,16 +23,16 @@ export default function BenefitSectiom() {
                   <Hourglass className="size-10 text-lime-500" />
                   <p className="text-2xl font-bold">Reduced Downtime</p>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Officia, similique.
+                    Experience swift deliveries that keep your projects on
+                    schedule and your operations running smoothly
                   </p>
                 </div>
                 <div className=" space-y-4 text-balance">
                   <Clipboard className="size-10 text-lime-500" />
                   <p className="text-2xl font-bold">Cost Efficiency</p>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Officia, similique.
+                    Optimize your logistics budget with our competitive pricing
+                    and reliable service offerings.
                   </p>
                 </div>
               </div>

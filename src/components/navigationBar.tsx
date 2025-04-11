@@ -39,7 +39,7 @@ export default function NavigationBar() {
   return (
     <>
       <NavigationMenu className="">
-        <NavigationMenuList className="w-screen  bg-green-1000 flex  justify-between items-center px-16 ">
+        <NavigationMenuList className="w-screen  bg-teal-100 flex  justify-between items-center px-16 ">
           <div className="w-full p-2">
             <NavigationMenuItem >
                 <Link href={`/`} className="flex items-center">
@@ -54,7 +54,7 @@ export default function NavigationBar() {
                 </Link>
             </NavigationMenuItem>
           </div>
-          <div className=" flex justify-end w-full">
+          <div className=" flex gap-x-2 justify-end w-full">
             {navigationLinks.map((nav) => (
               <NavigationMenuItem key={nav.id}>
                 <Link href={nav.hrefLink}>
