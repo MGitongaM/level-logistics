@@ -23,7 +23,7 @@ export default function NavigationBar() {
     {
       id: 3,
       title: "Services",
-      hrefLink: "/services",
+      hrefLink: "/our-services",
     },
     {
       id: 4,
