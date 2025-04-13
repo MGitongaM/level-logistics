@@ -1,0 +1,73 @@
+export const products = [
+  {
+    id: 1,
+    title: "AutoGas Dispensers",
+    imagSrc: "Autogas_dispensers.jpg_y5ymrq",
+    price: 0,
+    details: "Maximize your vehicle's efficiency with Levels Services Logistics's cutting-edge LPG Autogas Dispensers.",
+  },
+  {
+    id: 2,
+    title: "LPG Vaporizers",
+    imagSrc: "LPG-Vaporizers_yhh9wx",
+    price: 0,
+    details:
+      "Experience efficient and reliable conversion of LPG from liquid to gaseous form with our high-quality Levels Services Logistics. The process of converting liquid LPG (liquefied petroleum gas) to its gaseous form involves utilizing heat to increase the temperature of the liquid, causing it to vaporize.",
+  },
+  {
+    id: 3,
+    title: "Forklift Cylinders",
+    imagSrc: "Forklift-Cylinders_tmnjer",
+    price: 0,
+    details: "Power your industrial operations with Levels Services Logistics's reliable Forklift Cylinders. We offer propane and butane forklift cylinders equipped with fill valves and gauges. Ideal for commercial use in large firms such as airports and industrial plants, these cylinders are designed for robust performance in demanding environments. Please note, forklift cylinders are not for domestic use and are exclusively available for large firms.",
+  },
+  {
+    id: 4,
+    title: "LPG Meters",
+    imagSrc: "LPG-Meters_yhclwt",
+    price: 0,
+    details: "Ensure accurate measurement and efficient management of your LPG consumption with our range of LPG meters at Levels Services Logistics.",
+  },
+  {
+    id: 5,
+    title: "Control Panel",
+    imagSrc: "Control-Panel_k9y6k9",
+    price: 0,
+    details: "",
+  },
+  {
+    id: 6,
+    title: "LPG Ball Valve",
+    imagSrc: "lpg-ball-valve_g11npw",
+    price: 0,
+    details: "Ensure safety, reliability, and precise control in your gas distribution lines with our premium LPG ball valves at Levels Services Logistics.",
+  },
+  {
+    id: 7,
+    title: "LPG Tank Accesories",
+    imagSrc: "LPG-Tank-Accessories_ipj0va",
+    price: 0,
+    details: "Enhance the performance and safety of your LPG tanks with our comprehensive range of tank accessories at Levels Services Logistics.",
+  },
+  {
+    id: 8,
+    title: "Polyethylene LPG Piping",
+    imagSrc: "Polyethylene-LPG-Piping_d6opv8",
+    price: 0,
+    details: "",
+  },
+  {
+    id: 9,
+    title: "LPG Gas Tank Equipment",
+    imagSrc: "LPGAS-Train-Equipment_h19oau",
+    price: 0,
+    details: "Ensure seamless and safe operation of your LPG systems with our comprehensive LP GAS Train Equipment at Levels Services Logistics.",
+  },
+  {
+    id: 10,
+    title: "LPG Tank",
+    imagSrc: "LPG-Tank_szo9gf",
+    price: 0,
+    details: "Looking for reliable LPG storage solutions? Look no further than Levels Services Logistics. We specialize in providing high-quality underground and above-ground commercial LPG tanks.",
+  },
+];
