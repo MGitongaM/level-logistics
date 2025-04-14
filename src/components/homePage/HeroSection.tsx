@@ -21,7 +21,8 @@ export default function HeroSection() {
           <div className="w-full  ">
             {/* <div className="size-96 mx-auto bg-green-800 rounded-lg"></div> */}
             <ImageView
-              imageSrc="truck_bg-transparent_uibibo"
+              // imageSrc="truck_bg-transparent_uibibo"
+              imageSrc="levels_services_logistics_truck_lm0fbf"
               height={800}
               width={1200}
               alt="Levels Services Logitsics Trucking"
