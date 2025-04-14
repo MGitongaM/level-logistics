@@ -1,3 +1,6 @@
+import { AboutClients } from "@/StaticData/AboutUsPage";
+import ImageView from "../next-cloudinary/ImageView";
+
 export default function ClientSection() {
   return (
     <section className="h-full">
@@ -14,12 +17,17 @@ export default function ClientSection() {
           </p>
         </div>
         <div className="flex flex-wrap justify-evenly items-center gap-12 pt-12">
-          <div className="w-[24rem] h-48 rounded-lg bg-teal-700"></div>
-          <div className="w-[24rem] h-48 rounded-lg bg-teal-700"></div>
-          <div className="w-[24rem] h-48 rounded-lg bg-teal-700"></div>
-          <div className="w-[24rem] h-48 rounded-lg bg-teal-700"></div>
-          <div className="w-[24rem] h-48 rounded-lg bg-teal-700"></div>
-          <div className="w-[24rem] h-48 rounded-lg bg-teal-700"></div>
+          {AboutClients.map((client) => (
+            <div key={client.id} className="c">
+              <ImageView
+                imageSrc={client.source}
+                height={800}
+                width={1000}
+                alt={client.name}
+                classNames="object-contain w-[24rem] h-48 bg-white"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import ImageView from "../next-cloudinary/ImageView";
+
 export default function JourneySection() {
   return (
     <section className="h-full">
@@ -16,7 +18,14 @@ export default function JourneySection() {
             </p>
           </div>
           <div className="w-6/12 mx-auto">
-            <div className="w-full h-96 bg-teal-700 rounded-lg"></div>
+            {/* <div className="w-full h-96 bg-teal-700 rounded-lg"></div> */}
+            <ImageView
+              imageSrc="man_truck_y6gtsx"
+              height={800}
+              width={1000}
+              alt="level services logistics"
+              classNames="object-contain w-full h-full rounded-lg"
+            />
           </div>
         </div>
       </div>

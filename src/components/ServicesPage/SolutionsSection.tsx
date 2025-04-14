@@ -1,3 +1,5 @@
+import ImageView from "../next-cloudinary/ImageView";
+
 export default function SolutionsSection() {
   return (
     <section className="h-full ">
@@ -14,7 +16,15 @@ export default function SolutionsSection() {
               destination without delay
             </p>
           </div>
-          <div className="bg-teal-700 w-6/12 h-96 rounded-lg"></div>
+          <div className="bg-teal-7000 w-6/12 h-96 rounded-lg">
+          <ImageView 
+            imageSrc="special_equipment_tmnlno"
+            height={800}
+            width={1000}
+            alt="levels services logitsics "
+            classNames="object-cover w-full h-full rounded-lg"
+          />
+          </div>
         </div>
         <div className="flex justify-between items-center gap-6 px-10">
           <div className="w-5/12 space-y-6">
@@ -28,7 +38,15 @@ export default function SolutionsSection() {
               challenges.
             </p>
           </div>
-          <div className="bg-teal-700 w-6/12 h-96 rounded-lg"></div>
+          <div className="bg-teal-7000 w-6/12 h-96 rounded-lg">
+          <ImageView 
+            imageSrc="nissan_truck_i6opn7"
+            height={800}
+            width={1000}
+            alt="levels services logitsics "
+            classNames="object-cover w-full h-full rounded-lg"
+          />
+          </div>
         </div>
         <div className="flex justify-between items-center gap-6 px-10">
           <div className="w-5/12 space-y-6">
@@ -42,7 +60,15 @@ export default function SolutionsSection() {
               allowing vour operations to run smoothly and without interruntion.
             </p>
           </div>
-          <div className="bg-teal-700 w-6/12 h-96 rounded-lg"></div>
+          <div className="bg-teal-7000 w-6/12 h-96 rounded-lg">
+          <ImageView 
+            imageSrc="safe_trucking_stroqq"
+            height={800}
+            width={1000}
+            alt="levels services logitsics "
+            classNames="object-cover w-full h-full rounded-lg"
+          />
+          </div>
         </div>
       </div>
     </section>
