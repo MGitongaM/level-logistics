@@ -39,7 +39,8 @@ export default function NavigationBar() {
   return (
     <>
       <NavigationMenu className="">
-        <NavigationMenuList className="w-[99vw]   bg-teal-100 flex  justify-between items-center px-16 ">
+        {/* <NavigationMenuList className="w-[99vw]   bg-teal-100 flex  justify-between items-center px-16 "> */}
+        <NavigationMenuList className="w-[99vw] bg-white flex  justify-between items-center px-16 ">
           <div className="w-full p-2">
             <NavigationMenuItem >
                 <Link href={`/`} className="flex items-center">

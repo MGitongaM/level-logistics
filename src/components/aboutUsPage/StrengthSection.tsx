@@ -16,26 +16,26 @@ export default function StrengthSection() {
           </div>
           <div className="w-5/12 space-y-6">
             <p className="text-lg§">
-              <Expand />
+              <Expand className="text-teal-600 size-8" />
               <span className="font-semibold">Specialized Expertise:</span>
               We focus exclusively on logistics for petroleum products, ensuring
               compliance with stringent safety standards.
             </p>
             <p className="text-lg§">
-              <Truck />
+              <Truck className="text-teal-600 size-8"/>
               <span className="font-semibold">State-of-the-Art Fleet:</span>
               Our modern fleet of trucks is equipped with advanced safety
               features and tracking systems for secure transportation.
             </p>
             <p className="text-lg§">
-              <WorkflowIcon />
+              <WorkflowIcon className="text-teal-600 size-8"/>
               <span className="font-semibold">Strategic Operations:</span>
               With key hubs near key oil terminals and other strategic
               locations, we guarantee efficient delivery across Kenya and the
               East African region.
             </p>
             <p className="text-lg§">
-              <Vegan />
+              <Vegan className="text-teal-600 size-8"/>
               <span className="font-semibold">
                 Commitment to Sustainability:
               </span>

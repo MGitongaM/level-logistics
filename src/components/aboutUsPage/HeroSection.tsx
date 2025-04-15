@@ -1,6 +1,7 @@
 export default function HeroSection() {
   return (
-    <section className="h-screen bg-teal-100">
+    // <section className="h-screen bg-teal-100">
+    <section className="h-screen bg-white">
       <div className="container mx-auto grid place-content-center h-full px-4">
         <div className="flex justify-evenly items-center gap-8">
           <div className="w-6/12">
