@@ -5,7 +5,7 @@ export default function BenefitSectiom() {
   return (
     <>
       {/* <section className="min-h-screen px-4 py-20 bg-green-50"> */}
-      <section className="min-h-screen px-4 py-20 bg-teal-100">
+      <section className="min-h-screen px-4 py-20 bg-white">
         <div className="container mx-auto h-full grid place-content-center ">
           <div className="w-11/12 mx-auto flex justify-center items-center gap-8">
             <div className="w-6/12 space-y-6">
@@ -49,7 +49,7 @@ export default function BenefitSectiom() {
             </div>
           </div>
           <div className="w-6/12 mx-auto pt-20">
-            <div className="bg-green-100 rounded-lg space-y-4 py-4">
+            <div className="bg-teal-900 text-white rounded-lg space-y-4 py-4">
               <div className="flex justify-center">
                 <Star />
                 <Star />
@@ -64,10 +64,17 @@ export default function BenefitSectiom() {
                   equipemet delivery seamless and stress free
                 </p>
                 <div className="flex justify-center  gap-8">
-                  <div className="size-12 rounded-full bg-green-500"></div>
+                  {/* <div className="size-12 rounded-full bg-green-500"></div> */}
+                  <ImageView
+                   imageSrc="juma_erarrw"
+                   height={400}
+                   width={400}
+                   alt="level services logistics testimonial"
+                   classNames="object-cover bg-center size-12 rounded-full"
+                   />
                   <div className="flex-col gap-4">
-                    <p>Juma Wasengo</p>
-                    <p>Manager, ABp Group</p>
+                    <p className="font-">Juma Wasengo</p>
+                    <p className="font-semibold">Manager, ABp Group</p>
                   </div>
                 </div>
               </div>

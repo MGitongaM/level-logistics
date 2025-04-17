@@ -2,7 +2,7 @@ import { CalendarRange, Forklift, ShieldPlus, } from "lucide-react";
 
 export default function NeedsSection() {
   return (
-    <section className="h-full bg-teal-700">
+    <section className="h-full bg-teal-800">
       <div className="container mx-auto h-full grid  px-4 py-20">
         <div className="space-y-4 max-w-2xl">
           <h2 className="text-3xl font-bold ">

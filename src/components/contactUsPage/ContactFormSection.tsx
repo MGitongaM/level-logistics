@@ -35,10 +35,10 @@ export default function ContactForm() {
     },
   });
   return (
-    <section className="bg-teal-700 text-slate-100">
+    <section className="bg-teal-900 text-slate-100">
       <Form {...form}>
         <div className="flex justify-evenly items-start gap-8 px-8 py-20 ">
-          <div className="w-4/12">
+          <div className="w-4/12 space-y-4">
             <p className="text-4xl font-bold">Get in Touch</p>
             <p className="text-lg">We&apos;d love to hear from vou!</p>
           </div>

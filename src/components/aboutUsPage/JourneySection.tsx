@@ -2,7 +2,7 @@ import ImageView from "../next-cloudinary/ImageView";
 
 export default function JourneySection() {
   return (
-    <section className="h-full">
+    <section className="h-full bg-teal-800 text-white">
       <div className="container mx-auto grid place-content-center px-4 py-30">
         <div className="flex justify-evenly items-center mx-auto">
           <div className="w-4/12 space-y-6">
