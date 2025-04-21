@@ -24,7 +24,7 @@ export default function Footer() {
             </p>
             <p className="text-xs">
               Delivery excellence in trucking and transportation for the
-              petroleum industry
+              construction industry
             </p>
           </div>
           <div className="flex justify-between items-start gap-x-8">

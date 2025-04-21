@@ -11,8 +11,8 @@ export default function JourneySection() {
               Services
             </h2>
             <p className="text-lg  leading-8">
-              Founded with a commitment to reliability, Levels Logistics has
-              grown to become a trusted partner in the petroleum sector. our
+              Founded with a commitment to reliability, Level Services Logistics has
+              grown to become a trusted partner in the construction sector. our
               mission is to provide sate, efficient, and timely transportation
               solutions that empower our clients to succeed.
             </p>

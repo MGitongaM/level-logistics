@@ -9,7 +9,7 @@ export default function StrengthSection() {
             <p className="text-3xl font-bold"> What Sets Us Apart</p>
             <p className="text-lg">
               We are proud to play a role in strengthening Kenya&apos;s
-              petroleum industry by reducing supply chain inefficiencies. By
+              logistics industry by reducing supply chain inefficiencies. By
               leveraging our expertise, we help lower costs for consumers while
               supporting economic growth in the region.
             </p>
@@ -18,7 +18,7 @@ export default function StrengthSection() {
             <p className="text-lg§">
               <Expand className="text-teal-200 size-8" />
               <span className="font-semibold">Specialized Expertise:</span>
-              We focus exclusively on logistics for petroleum products, ensuring
+              We focus exclusively on logistics for the construction sector, ensuring
               compliance with stringent safety standards.
             </p>
             <p className="text-lg§">
@@ -30,7 +30,7 @@ export default function StrengthSection() {
             <p className="text-lg§">
               <WorkflowIcon className="text-teal-200 size-8" />
               <span className="font-semibold">Strategic Operations:</span>
-              With key hubs near key oil terminals and other strategic
+              With key hubs terminals and other strategic
               locations, we guarantee efficient delivery across Kenya and the
               East African region.
             </p>

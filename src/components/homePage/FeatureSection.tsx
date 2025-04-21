@@ -16,7 +16,7 @@ export default function FeatureSection() {
             <div className="w-5/12">
               <p className="text-lg leading-8">
                 At Level Logistics, we specialize in delivering equipment and
-                machinery tailored for the petroleum sector. Our commuitment to
+                machinery tailored for the contrustion sector. Our commitment to
                 excellence ensures that your cargo arrives safely and on time.
                 Experience peace of mind with our dedicated services designed
                 for your unique needs
@@ -45,10 +45,10 @@ export default function FeatureSection() {
             <div className="w-3/12 space-y-4 text-balance">
               <Users className="size-10 text-lime-500" />
               <h3 className="text-2xl font-bold">
-                Expert Team in Petroleum Sector at Your Service
+                Expert Team in the Logistics Sector at Your Service
               </h3>
               <p>
-              Our knowledgeable team understands the complexities of the petroleum industry
+              Our knowledgeable team understands the complexities of the logistics industry
               </p>
             </div>
           </div>

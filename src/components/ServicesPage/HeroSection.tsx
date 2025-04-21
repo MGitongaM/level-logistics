@@ -9,7 +9,7 @@ export default function HeroSection() {
             <h1 className="text-4xl font-bold">Expert Logistics Solutions</h1>
             <p className="text-xl font-semibold">
               Discover our specialized trucking services tailored for the
-              petroleum sector&apos;s unique transportation needs
+              construction sector&apos;s unique transportation needs
             </p>
           </div>
         </div>

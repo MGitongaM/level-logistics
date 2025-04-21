@@ -13,7 +13,7 @@ export default function HeroSection() {
               <p className="text-lg font-semibold leading-8">
                 At Levels Services Logistics, we are dedicated to providing
                 reliable trucking and transportation services tailored for the
-                petroluem industry. Our commitment to excellence ensures that
+                construction industry. Our commitment to excellence ensures that
                 your equipment and machinery are delivered safely and on time.
               </p>
             </div>
