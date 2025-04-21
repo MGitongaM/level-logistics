@@ -48,7 +48,7 @@ export default function BenefitSectiom() {
               />
             </div>
           </div>
-          <div className="w-6/12 mx-auto pt-20">
+          <div className="w-6/12 mx-auto pt-20" id="testimonials">
             <div className="border border-teal-900 text-black rounded-lg space-y-6 py-4">
               <div className="flex justify-center">
                 <Star />

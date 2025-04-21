@@ -10,7 +10,7 @@ import { Button } from "../ui/button";
 export default function FaqsSection() {
   return (
     <>
-    <section className="h-full bg-teal-900">
+    <section className="h-full bg-teal-900" id="faqs">
       <div className="container mx-auto grid place-content-center text-white px-4 py-20">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h3 className="text-4xl font-bold">FAQS</h3>
