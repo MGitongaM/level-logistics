@@ -1,32 +1,27 @@
-export const AboutClients=[
-    {
-        id:1,
-        name:"Oilibya",
-        source:"oilibya_transparent_ja4g32"
-    },
-    {
-        id:2,
-        name:"Rubis",
-        source:"rubis_transparent_xoj5ue"
-    },
-    {
-        id:3,
-        name:"Galana",
-        source:"galana_transparent_i2u0wl"
-    },
-    {
-        id:4,
-        name:"Dalbit",
-        source:"dalbit_transparent_u8pa1f"
-    },
-    {
-        id:5,
-        name:"Vivo Enegry",
-        source:"vivo_engergy_kenya_transparent_fmdgqj"
-    },
-    {
-        id:6,
-        name:"National Oil",
-        source:"National_oil_transparent_v91bn5"
-    },
-]
+export const AboutClients = [
+  {
+    id: 1,
+    name: "Petrocity",
+    source: "petrocity_bg-transparent_zdqxm9",
+  },
+  {
+    id: 2,
+    name: "Safi Power",
+    source: "Safi_Power_bg-transparent_spj9fi",
+  },
+  {
+    id: 3,
+    name: "Gasfil",
+    source: "Gasfil_bg-transparent_trwqhr",
+  },
+  {
+    id: 4,
+    name: "Astrol",
+    source: "Astrol_bg-transparent_wwem2m",
+  },
+  {
+    id: 5,
+    name: "Proto Enegry",
+    source: "Proto_Enegry_m18vib",
+  },
+];

@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 export default function CallToActionSection() {
   return (
     <section className="h-full">
-      <div className="container grid place-content-center px-4 py-30">
+      <div className="container mx-auto grid place-content-center px-4 py-30">
         <div className="max-w-lg space-y-6 text-center">
           <p className="text-3xl font-bold">Get in Touch </p>
           <p className="text-lg">

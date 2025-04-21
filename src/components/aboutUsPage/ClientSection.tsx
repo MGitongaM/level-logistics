@@ -3,7 +3,7 @@ import ImageView from "../next-cloudinary/ImageView";
 
 export default function ClientSection() {
   return (
-    <section className="h-full">
+    <section className="h-full bg-slate-200">
       <div className="container mx-auto grid place-content-center px-4 py-30">
         <div className="text-center max-w-3xl mx-auto space-y-6">
           <h3 className="text-3xl font-bold">
@@ -23,7 +23,7 @@ export default function ClientSection() {
                 height={800}
                 width={1000}
                 alt={client.name}
-                classNames="object-contain w-[24rem] h-48 bg-white"
+                classNames="object-contain w-[24rem] h-48  rounded-lg"
               />
             </div>
           ))}
