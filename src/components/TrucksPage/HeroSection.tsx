@@ -5,12 +5,12 @@ export default function HeroSection() {
             <div className="container mx-auto min-h-[80vh] grid place-content-center text-slate-100 px-4 py-20 z-30">
                 <div className="flex justify-evenly items-center gap-8">
                 <div className="w-4/12">
-                    <h1 className="text-4xl font-bold">
+                    <h1 className="text-4xl font-bold leading-12">
                     Our Fleet & Machinery Transport Capabilities
                     </h1>
                 </div>
-                <div className="w-4/12">
-                    <p className="text-lg leading-7">
+                <div className="w-5/12">
+                    <p className="text-lg font-semibold leading-8">
                     At Level Services Logistics, we pride ourselves on delivering
                     seamless logistics solutions tailored to the heavy equipment and
                     construction industries. Our specialized fleet and expert handling

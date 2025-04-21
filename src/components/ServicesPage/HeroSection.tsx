@@ -7,7 +7,7 @@ export default function HeroSection() {
         <div className="container mx-auto h-full grid place-content-center text-white px-4 z-30">
           <div className="text-center space-y-4">
             <h1 className="text-4xl font-bold">Expert Logistics Solutions</h1>
-            <p className="text-xl">
+            <p className="text-xl font-semibold">
               Discover our specialized trucking services tailored for the
               petroleum sector&apos;s unique transportation needs
             </p>

@@ -10,7 +10,7 @@ export default function HeroSection() {
               <h1 className="text-4xl font-bold">Delivering Your Future</h1>
             </div>
             <div className="w-5/12">
-              <p className="text-lg leading-8">
+              <p className="text-lg font-semibold leading-8">
                 At Levels Services Logistics, we are dedicated to providing
                 reliable trucking and transportation services tailored for the
                 petroluem industry. Our commitment to excellence ensures that
