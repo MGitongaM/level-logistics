@@ -49,7 +49,7 @@ export default function BenefitSectiom() {
             </div>
           </div>
           <div className="w-6/12 mx-auto pt-20">
-            <div className="bg-teal-900 text-white rounded-lg space-y-4 py-4">
+            <div className="bg-teal-900 text-white rounded-lg space-y-6 py-4">
               <div className="flex justify-center">
                 <Star />
                 <Star />
@@ -57,8 +57,8 @@ export default function BenefitSectiom() {
                 <Star />
                 <Star />
               </div>
-              <div className="w-10/12 mx-auto space-y-4">
-                <p className="text-balance">
+              <div className="max-w-xl mx-auto space-y-4">
+                <p className="text-balance text-center">
                   Levels Logistics exceeded our expectations with their prompt
                   and reliable service. Their teams professionalism made our
                   equipemet delivery seamless and stress free

@@ -7,7 +7,7 @@ export default function Footer() {
       <footer className="conatiner px-4 py-20">
         {/* <div className="flex justify-between items-center bg-green-800 text-slate-100 rounded-xl px-8 py-10"> */}
         <div className="flex justify-between items-center bg-slate-800 text-slate-100 rounded-xl px-8 py-10">
-          <div className="w-4/12 space-y-4">
+          <div className="w-5/12 space-y-4">
           <Link href={`/`} className="flex items-center">
                 <ImageView
                     // imageSrc="level_services_logo_bg-transparent_ellvje"
