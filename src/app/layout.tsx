@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Level Services Logistics",
   description:
-    "We specialize in delivering equipment and machinery tailored for the petroleum sector. Trust us to handle your transportation needs with efficiency and care.",
+    "We specialize in delivering equipment and machinery tailored for the construction sector. Trust us to handle your transportation needs with efficiency and care.",
 };
 
 export default function RootLayout({
