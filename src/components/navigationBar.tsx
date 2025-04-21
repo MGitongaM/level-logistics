@@ -27,8 +27,8 @@ export default function NavigationBar() {
     },
     {
       id: 4,
-      title: "Products",
-      hrefLink: "/products",
+      title: "Trucks",
+      hrefLink: "/trucks",
     },
     {
       id: 5,
