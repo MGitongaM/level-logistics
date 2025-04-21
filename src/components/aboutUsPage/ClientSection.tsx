@@ -15,7 +15,7 @@ export default function ClientSection() {
             the petroleum supply chain.
           </p>
         </div>
-        <div className="flex flex-wrap justify-evenly items-center gap-12 pt-12">
+        <div className="flex flex-wrap justify-evenly items-center gap-x-12 gap-y-24 pt-12">
           {AboutClients.map((client) => (
             <div key={client.id} className="c">
               <ImageView

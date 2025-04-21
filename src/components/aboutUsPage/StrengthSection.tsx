@@ -2,7 +2,7 @@ import { Expand, Truck, Vegan, WorkflowIcon } from "lucide-react";
 
 export default function StrengthSection() {
   return (
-    <section className="h-full bg-teal-800 text-white ">
+    <section className="h-full bg-teal-950 text-white ">
       <div className="container mx-auto grid place-content-center px-4 py-30">
         <div className="flex justify-evenly items-center gap-8">
           <div className="w-5/12 space-y-6">

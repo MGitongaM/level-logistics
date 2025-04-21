@@ -2,7 +2,7 @@ import ImageView from "../next-cloudinary/ImageView";
 
 export default function FleetSection() {
   return (
-    <section className="h-full bg-teal-700 text-slate-100">
+    <section className="h-full bg-teal-950 text-slate-100">
       <div className="container mx-auto px-4 py-20">
         <div className="grid place-content-center text-center space-y-6 ">
           <h2 className="text-4xl font-semibold">Our Fleet of Trucks</h2>
