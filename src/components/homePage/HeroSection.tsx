@@ -1,6 +1,7 @@
 // import ImageView from "../next-cloudinary/ImageView";
 // import VideoView from "../next-cloudinary/VideoView";
 
+import QuoteForm from "../forms/QuoteForm";
 import HeroCarouselContent from "./HeroCarouselContent";
 
 
@@ -21,6 +22,7 @@ export default function HeroSection() {
                 machinery tailored for the construction sector. Trust us to handle
                 your transportation needs with efficiency and care.
               </p>
+              <QuoteForm/>
             </div>
             <div className="w-full  ">
              <HeroCarouselContent/>

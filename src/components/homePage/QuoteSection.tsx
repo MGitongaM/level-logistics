@@ -1,4 +1,5 @@
-import { Button } from "../ui/button";
+import QuoteForm from "../forms/QuoteForm";
+
 
 
 export default function QuoteSection() {
@@ -13,7 +14,8 @@ export default function QuoteSection() {
                         <p className="text-lg pt-4">Contact us for reliable transportation solutions tailored for you</p>
                     </div>
                     <div className="">
-                        <Button type="button" className="w-48 text-lg bg-green-600 hover:bg-white hover:text-black hover:scale-105">Qoute</Button>
+                        {/* <Button type="button" className="w-48 text-lg bg-green-600 hover:bg-white hover:text-black hover:scale-105">Qoute</Button> */}
+                        <QuoteForm/>
                     </div>
                 </div>
             </div>
