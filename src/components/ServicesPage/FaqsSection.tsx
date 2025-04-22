@@ -88,7 +88,7 @@ export default function FaqsSection() {
           <div className="text-center space-y-4 py-20">
             <p className="text-3xl font-bold">Still have questions?</p>
             <p className="text-lg">We are here to help you! </p>
-            <Button asChild variant="outline" className="bg-transparent hover:bg-teal-700 hover:scale-105 hover:text-white">
+            <Button asChild variant="outline" className="bg-transparent hover:bg-teal-700 hover:scale-110 hover:text-white w-48 h-12">
               <Link href="/contact-us">Contact Us</Link>
             </Button>
           </div>

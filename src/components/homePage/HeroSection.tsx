@@ -17,7 +17,7 @@ export default function HeroSection() {
                 Reliable Transportation Solutions For Your Business
               </h1>
               <p className=" leading-8 text-xl font-semibold">
-                At Levels Logistics, we specialize in delivering equipment and
+                At Level Services Logistics, we specialize in delivering equipment and
                 machinery tailored for the construction sector. Trust us to handle
                 your transportation needs with efficiency and care.
               </p>

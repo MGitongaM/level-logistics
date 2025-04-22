@@ -10,19 +10,19 @@ export default function HeroSection() {
             <Mail className="size-10 text-teal-500" />
             <h3 className="text-2xl font-bold">Email </h3>
             <p>Reach out to us for inquiries or support anvtime</p>
-            <p>info@levelsservices.co.ke</p>
+            <p className="font-semibold">info@levelsservices.co.ke</p>
           </div>
           <div className="w-3/12 space-y-4 text-balance">
             <Phone className="size-10 text-teal-500" />
             <h3 className="text-2xl font-bold">Phone</h3>
             <p>Call us for immediate assistance or to discuss your needs </p>
-            <p>020 090 658 789</p>
+            <p className="font-semibold">020 090 658 789</p>
           </div>
           <div className="w-3/12 space-y-4 text-balance">
             <MapPin className="size-10 text-teal-500" />
             <h3 className="text-2xl font-bold">Office</h3>
             <p>Visit us for consultations and personalized service</p>
-            <p> Trans Miles, riverside road, 543 </p>
+            <p className="font-semibold"> Trans Miles, riverside road, 543 </p>
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function TrucksCTASection() {
                     <p className="text-lg">Contact us today for a customized logistics solution that keeps your project moving forward.</p>
                 </div>
                 <div className="w-3/12 grid place-content-center">
-                    <Button asChild className="bg-teal-500 hover:bg-teal-700 hover:scale-110"> 
+                    <Button asChild className="bg-teal-500 hover:bg-teal-700 hover:scale-110 w-48 h-12"> 
                         <Link href="/contact-us">
                         Contact Us
                         </Link>

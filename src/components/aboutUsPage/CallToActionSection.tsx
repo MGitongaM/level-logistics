@@ -13,7 +13,7 @@ export default function CallToActionSection() {
           </p>
           <Button
             asChild
-            className="bg-teal-600 hover:bg-teal-700 hover:scale-105 "
+            className="bg-teal-600 hover:bg-teal-700 hover:scale-105 w-48 h-12 "
           >
             <Link href="/contact-us">Contact Us Today</Link>
           </Button>

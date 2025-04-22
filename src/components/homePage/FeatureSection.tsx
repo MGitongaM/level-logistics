@@ -15,7 +15,7 @@ export default function FeatureSection() {
             </div>
             <div className="w-5/12">
               <p className="text-lg leading-8">
-                At Level Logistics, we specialize in delivering equipment and
+                At Level Services Logistics, we specialize in delivering equipment and
                 machinery tailored for the contrustion sector. Our commitment to
                 excellence ensures that your cargo arrives safely and on time.
                 Experience peace of mind with our dedicated services designed
