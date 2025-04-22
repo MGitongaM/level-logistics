@@ -67,7 +67,9 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex items-center gap-4">
-            <p className="underline underline-offset-2">Privacy Policy</p>
+            <p className="underline underline-offset-2">
+              <Link href={"/privacy-policy"}>Privacy Policy</Link>
+            </p>
           </div>
         </div>
       </footer>
