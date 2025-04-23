@@ -4,16 +4,16 @@ export default function FeatureSection() {
   return (
     <>
       {/* <section className="h-screen px-4 bg-green-950"> */}
-      <section className="h-screen px-4 bg-teal-950">
-        <div className="conatiner mx-auto h-full grid place-content-center px-20">
-          <div className=" w-full text-slate-100 flex justify-between items-center gap-4 ">
-            <div className="w-5/12 ">
+      <section className="min-h-screen px-4 bg-teal-950">
+        <div className="conatiner mx-auto h-full grid place-content-center px-4 lg:px-20 py-10">
+          <div className=" w-full text-slate-100 flex flex-wrap md:flex-nowrap justify-between items-center gap-4 ">
+            <div className="w-full md:w-5/12 ">
               <h2 className="text-4xl leading-12 font-bold">
-                Your Trusted Partner in <br />
+                Your Trusted Partner in <br className="hidden md:block" />
                 Equipment Transportation
               </h2>
             </div>
-            <div className="w-5/12">
+            <div className="w-full md:w-5/12">
               <p className="text-lg leading-8">
                 At Level Services Logistics, we specialize in delivering equipment and
                 machinery tailored for the contrustion sector. Our commitment to
@@ -23,8 +23,8 @@ export default function FeatureSection() {
               </p>
             </div>
           </div>
-          <div className="w-full text-slate-100 flex justify-between items-center gap-8 py-40">
-            <div className="w-3/12  space-y-4 text-balance">
+          <div className="w-full text-slate-100 flex flex-wrap md:flex-nowrap justify-between items-start gap-x-8 gap-y-12 py-40">
+            <div className="w-full lg:w-3/12  space-y-4 text-balance">
               <Forklift className="size-10 text-lime-500" />
               <h3 className="text-2xl font-bold">
                 Specialzed Equipment Delivery for Your Needs
@@ -33,7 +33,7 @@ export default function FeatureSection() {
               We handle all types of equipment with precision.
               </p>
             </div>
-            <div className="w-3/12 space-y-4 text-balance">
+            <div className="w-full lg:w-3/12 space-y-4 text-balance">
               <CalendarRange className="size-10 text-lime-500" />
               <h3 className="text-2xl font-bold">
                 Timely and Reliable Serice You Can Count On
@@ -42,7 +42,7 @@ export default function FeatureSection() {
               Our punctuality sets us apart in the industry.
               </p>
             </div>
-            <div className="w-3/12 space-y-4 text-balance">
+            <div className="w-full lg:w-3/12 space-y-4 text-balance">
               <Users className="size-10 text-lime-500" />
               <h3 className="text-2xl font-bold">
                 Expert Team in the Logistics Sector at Your Service

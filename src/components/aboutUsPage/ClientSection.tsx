@@ -15,7 +15,7 @@ export default function ClientSection() {
             the petroleum supply chain.
           </p>
         </div>
-        <div className="flex flex-wrap justify-evenly items-center gap-x-12 gap-y-24 pt-12">
+        <div className="flex flex-wrap  justify-evenly items-center gap-x-12 gap-y-12 pt-12">
           {AboutClients.map((client) => (
             <div key={client.id} className="c">
               <ImageView
@@ -23,7 +23,7 @@ export default function ClientSection() {
                 height={800}
                 width={1000}
                 alt={client.name}
-                classNames="object-contain w-[24rem] h-48  rounded-lg"
+                classNames="object-contain w-32 lg:w-[24rem] h-48  rounded-lg"
               />
             </div>
           ))}

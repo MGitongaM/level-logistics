@@ -19,7 +19,7 @@ export default function FaqsSection() {
             transportion services
           </p>
         </div>
-        <div className="min-w-3xl mx-auto">
+        <div className="w-full lg:min-w-3xl mx-auto">
           <Accordion
             type="single"
             collapsible

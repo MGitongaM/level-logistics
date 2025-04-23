@@ -7,8 +7,8 @@ export default function BenefitSectiom() {
       {/* <section className="min-h-screen px-4 py-20 bg-green-50"> */}
       <section className="min-h-screen px-4 py-20 bg-white">
         <div className="container mx-auto h-full grid place-content-center ">
-          <div className="w-11/12 mx-auto flex justify-center items-center gap-8">
-            <div className="w-6/12 space-y-6">
+          <div className="w-11/12 mx-auto flex flex-wrap md:flex-nowrap justify-center items-center gap-8">
+            <div className="w-full md:w-6/12 space-y-6">
               <h3 className="text-4xl font-bold">
                 Discover the Key Benefits of Choosing Level Services Logitstics for Your
                 Transporation Needs
@@ -37,7 +37,7 @@ export default function BenefitSectiom() {
                 </div>
               </div>
             </div>
-            <div className="w-6/12">
+            <div className="w-full md:w-6/12">
               {/* <div className="size-96 mx-auto bg-green-600 rounded-lg"></div> */}
               <ImageView
                 imageSrc="levels_logistics_benefits_xknh43"
@@ -48,7 +48,7 @@ export default function BenefitSectiom() {
               />
             </div>
           </div>
-          <div className="w-6/12 mx-auto pt-20" id="testimonials">
+          <div className="w-full md:w-6/12 mx-auto pt-20" id="testimonials">
             <div className="border border-teal-900 text-black rounded-lg space-y-6 py-4">
               <div className="flex justify-center">
                 <Star />

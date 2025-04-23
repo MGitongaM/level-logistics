@@ -4,8 +4,8 @@ export default function StrengthSection() {
   return (
     <section className="h-full bg-teal-950 text-white ">
       <div className="container mx-auto grid place-content-center px-4 py-30">
-        <div className="flex justify-evenly items-center gap-8">
-          <div className="w-5/12 space-y-6">
+        <div className="flex flex-wrap md:flex-nowrap justify-evenly items-center gap-8">
+          <div className="w-full md:w-5/12 space-y-6">
             <p className="text-3xl font-bold"> What Sets Us Apart</p>
             <p className="text-lg">
               We are proud to play a role in strengthening Kenya&apos;s
@@ -14,7 +14,7 @@ export default function StrengthSection() {
               supporting economic growth in the region.
             </p>
           </div>
-          <div className="w-5/12 space-y-12">
+          <div className="w-full md:w-5/12 space-y-12">
             <p className="text-lg§">
               <Expand className="text-teal-200 size-8" />
               <span className="font-semibold">Specialized Expertise:</span>
