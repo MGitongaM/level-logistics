@@ -27,7 +27,7 @@ export default function Footer() {
               construction industry
             </p>
           </div>
-          <div className="flex justify-between items-start gap-x-8">
+          <div className="flex justify-between items-start gap-x-8 text-sm">
             <div className="c">
               <ul className="list-none  space-y-4">
                 <li className="hover:underline underline-offset-2">
@@ -59,7 +59,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center gap-4 px-2 pt-4">
+        <div className="flex justify-between items-center text-xs gap-4 px-2 pt-4">
           <div className="c">
             <p>
               &#169; {new Date().getFullYear()} Levels Logistics. All rights
