@@ -11,8 +11,8 @@ export default function FleetSection() {
             range of heavy and oversized loads
           </p>
         </div>
-        <div className="flex justify-evenly items-center gap-8 py-20">
-          <div className="w-5/12">
+        <div className="flex flex-wrap-reverse md:flex-nowrap justify-evenly items-center gap-8 py-20">
+          <div className="w-full md:w-5/12">
             <ImageView
               imageSrc="crane_trucks_1_cmeupe"
               height={800}
@@ -21,7 +21,7 @@ export default function FleetSection() {
               classNames="object-cover h-full w-full rounded-lg"
             />
           </div>
-          <div className="w-5/12 space-y-6">
+          <div className="w-full md:w-5/12 space-y-6">
             <p className="text-2xl font-semibold">Crane Trucks</p>
             <p className="text-lg leading-7">
               Equipped with powerful cranes, our crane trucks facilitate
@@ -30,8 +30,8 @@ export default function FleetSection() {
             </p>
           </div>
         </div>
-        <div className="flex justify-evenly items-center gap-8 py-20">
-          <div className="w-5/12 space-y-6">
+        <div className="flex flex-wrap md:flex-nowrap justify-evenly items-center gap-8 py-20">
+          <div className="w-full md:w-5/12 space-y-6">
             <p className="text-2xl font-semibold">Flatbed Trucks</p>
             <p className="text-lg leading-7">
               Ideal for transporting bulky and irregularly shaped machinery, our
@@ -39,7 +39,7 @@ export default function FleetSection() {
               valuable assets.
             </p>
           </div>
-          <div className="w-5/12">
+          <div className="w-full md:w-5/12">
             <ImageView
               imageSrc="flatbed_Trailer_wvrqw0"
               height={800}
@@ -49,8 +49,8 @@ export default function FleetSection() {
             />
           </div>
         </div>
-        <div className="flex justify-evenly items-center gap-8 py-20">
-          <div className="w-5/12">
+        <div className="flex flex-wrap-reverse md:flex-nowrap justify-evenly items-center gap-8 py-20">
+          <div className="w-full md:w-5/12">
             <ImageView
               imageSrc="low_Loaders_jrcp9r"
               height={800}
@@ -59,7 +59,7 @@ export default function FleetSection() {
               classNames="object-cover h-full w-full rounded-lg"
             />
           </div>
-          <div className="w-5/12 space-y-6">
+          <div className="w-full md:w-5/12 space-y-6">
             <p className="text-2xl font-semibold">Low Loaders</p>
             <p className="text-lg leading-7">
               Designed for heavy, oversized machinery, our low loaders offer low

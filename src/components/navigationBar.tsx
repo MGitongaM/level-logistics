@@ -7,6 +7,15 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
+import { MenuSquare } from "lucide-react";
 
 export default function NavigationBar() {
   const navigationLinks = [
@@ -38,22 +47,22 @@ export default function NavigationBar() {
   ];
   return (
     <>
-      <NavigationMenu className="">
+      <NavigationMenu className="hidden md:block">
         {/* <NavigationMenuList className="w-[99vw]   bg-teal-100 flex  justify-between items-center px-16 "> */}
-        <NavigationMenuList className="w-[99vw] bg-white flex  justify-between items-center px-16 ">
+        <NavigationMenuList className="w-[99vw] bg-white flex  justify-between items-center px-1 lg:px-16 ">
           <div className="w-full p-2">
-            <NavigationMenuItem >
-                <Link href={`/`} className="flex items-center">
+            <NavigationMenuItem>
+              <Link href={`/`} className="flex items-center">
                 <ImageView
-                    // imageSrc="level_services_logo_bg-transparent_ellvje"
-                    imageSrc="levels_services_transparent_logo_only_zquhit"
-                    height={400}
-                    width={400}
-                    alt=""
-                    classNames="object-cover size-20"
+                  // imageSrc="level_services_logo_bg-transparent_ellvje"
+                  imageSrc="levels_services_transparent_logo_only_zquhit"
+                  height={400}
+                  width={400}
+                  alt=""
+                  classNames="object-cover size-20"
                 />
                 <p className="font-semibold">Levels Services Logistics</p>
-                </Link>
+              </Link>
             </NavigationMenuItem>
           </div>
           <div className=" flex gap-x-2 justify-end w-full">
@@ -66,6 +75,56 @@ export default function NavigationBar() {
                 </Link>
               </NavigationMenuItem>
             ))}
+          </div>
+        </NavigationMenuList>
+      </NavigationMenu>
+
+      {/* mobile menu */}
+      <NavigationMenu className="block md:hidden">
+        <NavigationMenuList>
+          <div className="w-[98vw] flex justify-between items-center px-4">
+            <div className="c">
+              <NavigationMenuItem>
+                <Link href={`/`} className="flex items-center">
+                  <ImageView
+                    imageSrc="levels_services_transparent_logo_only_zquhit"
+                    height={400}
+                    width={400}
+                    alt=""
+                    classNames="object-contain size-20"
+                  />
+                  <p className="font-semibold text-xs">
+                    Levels Services Logistics
+                  </p>
+                </Link>
+              </NavigationMenuItem>
+            </div>
+            <div className="c">
+              <Sheet>
+                <SheetTrigger>
+                  <MenuSquare className="text-teal-400" />
+                </SheetTrigger>
+                <SheetContent side="top">
+                  <SheetHeader>
+                    <SheetTitle></SheetTitle>
+                    <SheetDescription></SheetDescription>
+                  </SheetHeader>
+                  <div className=" flex flex-col gap-x-2 justify-end items-end list-none text-left pr-10 w-full">
+                    {navigationLinks.map((nav) => (
+                      <NavigationMenuItem key={nav.id}>
+                        <Link href={nav.hrefLink} legacyBehavior passHref>
+                          <NavigationMenuLink
+                            className={navigationMenuTriggerStyle()}
+                          >
+                            {nav.title}
+                          </NavigationMenuLink>
+                        </Link>
+                      </NavigationMenuItem>
+                    ))}
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
           </div>
         </NavigationMenuList>
       </NavigationMenu>

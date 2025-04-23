@@ -15,15 +15,15 @@ export default function NeedsSection() {
             and efficiency
           </p>
         </div>
-        <div className="w-full text-slate-100 flex justify-between items-center gap-8 py-40">
-          <div className="w-3/12  space-y-4 text-balance">
+        <div className="w-full text-slate-100 flex flex-wrap md:flex-nowrap justify-between items-start gap-x-8 gap-y-12 py-40">
+          <div className="w-full md:w-3/12  space-y-4 text-balance">
             <Forklift className="size-10 text-lime-500" />
             <h3 className="text-2xl font-bold">
               Specialized Equipment Transportation Services{" "}
             </h3>
             <p>We specialize in transporting heavy machinery and equipemet </p>
           </div>
-          <div className="w-3/12 space-y-4 text-balance">
+          <div className="w-full md:w-3/12 space-y-4 text-balance">
             <CalendarRange className="size-10 text-lime-500" />
             <h3 className="text-2xl font-bold">
               Reliable Delivery for the Construction Industry{" "}
@@ -32,7 +32,7 @@ export default function NeedsSection() {
               Our logistics solutions are designed for relability and speed{" "}
             </p>
           </div>
-          <div className="w-3/12 space-y-4 text-balance">
+          <div className="w-full md:w-3/12 space-y-4 text-balance">
             <ShieldPlus className="size-10 text-lime-500" />
             <h3 className="text-2xl font-bold">
               Safety-First Approach to Transportation

@@ -4,8 +4,8 @@ export default function JourneySection() {
   return (
     <section className="h-full bg-teal-950 text-white">
       <div className="container mx-auto grid place-content-center px-4 py-30">
-        <div className="flex justify-evenly items-center mx-auto">
-          <div className="w-4/12 space-y-6">
+        <div className="flex flex-wrap md:flex-nowrap justify-evenly items-center gap-8 mx-auto">
+          <div className="w-full xl:w-4/12 space-y-6">
             <h2 className="text-3xl font-bold">
               Our Journey: Delivering Excellence in Trucking and Transportation
               Services
@@ -17,7 +17,7 @@ export default function JourneySection() {
               solutions that empower our clients to succeed.
             </p>
           </div>
-          <div className="w-6/12 mx-auto">
+          <div className="w-full xl:w-6/12 mx-auto">
             {/* <div className="w-full h-96 bg-teal-700 rounded-lg"></div> */}
             <ImageView
               imageSrc="man_truck_y6gtsx"

@@ -3,9 +3,9 @@ import ImageView from "../next-cloudinary/ImageView";
 export default function SolutionsSection() {
   return (
     <section className="h-full ">
-      <div className="container mx-auto  space-y-64  px-4 py-40">
-        <div className="flex justify-between items-center gap-6 px-10">
-          <div className="w-5/12 space-y-6">
+      <div className="container mx-auto  space-y-48 lg:space-y-64  px-4 py-40">
+        <div className="flex flex-wrap md:flex-nowrap justify-between items-center gap-6 px-4 lg:px-10">
+          <div className="w-full md:w-5/12 space-y-6">
             <p className="text-3xl font-bold">
               Reliable Equipment and Machinery Delivery Services
             </p>
@@ -16,7 +16,7 @@ export default function SolutionsSection() {
               destination without delay
             </p>
           </div>
-          <div className="bg-teal-7000 w-6/12 h-96 rounded-lg">
+          <div className="bg-teal-7000 w-full md:w-6/12 h-96 rounded-lg">
           <ImageView 
             imageSrc="special_equipment_tmnlno"
             height={800}
@@ -26,8 +26,8 @@ export default function SolutionsSection() {
           />
           </div>
         </div>
-        <div className="flex justify-between items-center gap-6 px-10">
-          <div className="w-5/12 space-y-6">
+        <div className="flex flex-wrap md:flex-nowrap justify-between items-center gap-6 px-10">
+          <div className="w-full md:w-5/12 space-y-6">
             <p className="text-3xl font-bold">
               Expert Trucking Services for Your Needs
             </p>
@@ -38,7 +38,7 @@ export default function SolutionsSection() {
               challenges
             </p>
           </div>
-          <div className="bg-teal-7000 w-6/12 h-96 rounded-lg">
+          <div className="bg-teal-7000 w-full md:w-6/12 h-96 rounded-lg">
           <ImageView 
             imageSrc="nissan_truck_i6opn7"
             height={800}
@@ -48,8 +48,8 @@ export default function SolutionsSection() {
           />
           </div>
         </div>
-        <div className="flex justify-between items-center gap-6 px-10">
-          <div className="w-5/12 space-y-6">
+        <div className="flex flex-wrap md:flex-nowrap justify-between items-center gap-6 px-10">
+          <div className="w-full md:w-5/12 space-y-6">
             <p className="text-3xl font-bold">
               Reliable Transportation Solutions for the Construction Industry{" "}
             </p>
@@ -60,7 +60,7 @@ export default function SolutionsSection() {
               allowing vour operations to run smoothly and without interruption
             </p>
           </div>
-          <div className="bg-teal-7000 w-6/12 h-96 rounded-lg">
+          <div className="bg-teal-7000 w-full md:w-6/12 h-96 rounded-lg">
           <ImageView 
             imageSrc="safe_trucking_stroqq"
             height={800}

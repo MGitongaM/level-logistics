@@ -16,7 +16,7 @@ export default function MachinerySection() {
           {Machineries.map((machine) => (
             <div
               key={machine.id}
-              className="border border-teal-600 hover:bg-teal-700 hover:size:20 rounded-lg w-96 h-32 grid place-content-center"
+              className="border border-teal-600 hover:bg-teal-700 hover:size:20 rounded-lg w-36 lg:w-96 h-32 grid place-content-center"
             >
               <ImageView
                 imageSrc={machine.machineIconSource}
