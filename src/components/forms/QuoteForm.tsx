@@ -71,7 +71,7 @@ export default function QuoteForm() {
             Get Quote
           </Button>
         </AlertDialogTrigger>
-        <AlertDialogContent className="min-w-6/12">
+        <AlertDialogContent className="min-w-6/12 lg:min-w-10/12">
           <AlertDialogHeader>
             <AlertDialogTitle className="text-center">Please provide us with the following details</AlertDialogTitle>
             <AlertDialogDescription></AlertDialogDescription>
@@ -82,7 +82,7 @@ export default function QuoteForm() {
               onSubmit={form.handleSubmit(handleFormSubmit)}
               className="space-y-6"
             >
-              <div className="flex justify-between items-center gap-6 py-4">
+              <div className="flex flex-wrap md:flex-nowrap justify-between items-center gap-6 py-4">
                 <FormField
                   control={form.control}
                   name="fullName"
