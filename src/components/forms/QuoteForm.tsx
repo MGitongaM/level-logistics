@@ -71,7 +71,7 @@ export default function QuoteForm() {
             Get Quote
           </Button>
         </AlertDialogTrigger>
-        <AlertDialogContent className="min-w-6/12 lg:min-w-10/12">
+        <AlertDialogContent className="min-w-10/12 lg:min-w-6/12">
           <AlertDialogHeader>
             <AlertDialogTitle className="text-center">Please provide us with the following details</AlertDialogTitle>
             <AlertDialogDescription></AlertDialogDescription>
