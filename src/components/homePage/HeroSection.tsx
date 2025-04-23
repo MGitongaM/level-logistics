@@ -11,9 +11,9 @@ export default function HeroSection() {
       {/* <section className="h-screen bg-green-50"> */}
       {/* <section className="h-screen bg-teal-100"> */}
       <section className="h-screen bg-white">
-        <div className="container mx-auto h-full grid place-content-center">
+        <div className="container mx-auto h-full grid place-content-start">
           <div className="flex  justify-around items-center gap-2 px-4">
-            <div className="text-balance w-6/12  space-y-6">
+            <div className="text-balance w-8/12  space-y-6">
               <h1 className="text-5xl leading-14 font-bold">
                 Reliable Transportation Solutions For Your Business
               </h1>
