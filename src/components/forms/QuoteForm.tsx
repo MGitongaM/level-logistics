@@ -25,6 +25,7 @@ import {
 } from "../ui/alert-dialog";
 import { useState } from "react";
 import { toast } from "sonner";
+import { Check } from "lucide-react";
 
 export default function QuoteForm() {
   const [open, setOpen] = useState(false);
@@ -51,13 +52,13 @@ export default function QuoteForm() {
   });
   function handleFormSubmit(values: z.infer<typeof qouteFormSchema>) {
     console.log("Qoute Form", values);
-    // toast(
-    //   <div className="flex flex-col">
-    //     <p>Quote Form Details</p>
-    //     <p>{JSON.stringify(values)}</p>
-    //   </div>
-    // );
-    toast.message("Form Has be submited, please check your email")
+    toast(
+      <div className="flex justify-evenly items-center gap-2">
+        <Check className="text-green-400 size-4 font-bold bg-green-100 p-1 rounded-full" />
+        <p>Form Has be submited, please check your email</p>
+      </div>
+    );
+    // toast.message("Form Has be submited, please check your email")
     setOpen(false);
   }
   return (

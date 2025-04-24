@@ -9,13 +9,16 @@ import {
   FormLabel,
   FormMessage,
 } from "../ui/form";
-import { useForm } from "react-hook-form";
+
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
+import { toast } from "sonner";
+import { Check } from "lucide-react";
+import { useForm } from "react-hook-form";
 
-const FormSchema = z.object({
+const contactFormSchema = z.object({
   fullName: z.string(),
   email: z.string(),
   phone: z.string(),
@@ -24,8 +27,8 @@ const FormSchema = z.object({
 });
 
 export default function ContactForm() {
-  const form = useForm<z.infer<typeof FormSchema>>({
-    resolver: zodResolver(FormSchema),
+  const form = useForm<z.infer<typeof contactFormSchema>>({
+    resolver: zodResolver(contactFormSchema),
     defaultValues: {
       fullName: "",
       email: "",
@@ -34,6 +37,16 @@ export default function ContactForm() {
       message: "",
     },
   });
+  function handleContactFormSubmit(values: z.infer<typeof contactFormSchema>) {
+    console.log("Contact Form", values)
+    form.reset()
+    toast(
+      <div className="flex justify-evenly items-center gap-2">
+        <Check className="text-green-400 size-4 font-bold bg-green-100 p-1 rounded-full" />
+        <p>contact form has been submited</p>
+      </div>
+    );
+  }
   return (
     <section className="bg-teal-900 text-slate-100">
       <Form {...form}>
@@ -43,7 +56,10 @@ export default function ContactForm() {
             <p className="text-lg">We&apos;d love to hear from vou!</p>
           </div>
           <div className="w-full md:w-6/12">
-            <form className=" space-y-8">
+            <form
+              onSubmit={form.handleSubmit(handleContactFormSubmit)}
+              className=" space-y-8"
+            >
               <FormField
                 control={form.control}
                 name="fullName"
@@ -51,7 +67,7 @@ export default function ContactForm() {
                   <FormItem>
                     <FormLabel>Full Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="Imani Brown" {...field} />
+                      <Input placeholder="Imani Brown" {...field} required/>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -64,7 +80,7 @@ export default function ContactForm() {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="youreamil@mail.com" {...field} />
+                      <Input placeholder="youreamil@mail.com" {...field} required/>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -77,7 +93,7 @@ export default function ContactForm() {
                   <FormItem>
                     <FormLabel>Phone Number</FormLabel>
                     <FormControl>
-                      <Input placeholder="0700 999 000 444" {...field} />
+                      <Input placeholder="0700 999 000 444" {...field} required/>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -90,7 +106,7 @@ export default function ContactForm() {
                   <FormItem>
                     <FormLabel>Subject</FormLabel>
                     <FormControl>
-                      <Input placeholder="Message Topic" {...field} />
+                      <Input placeholder="Message Topic" {...field} required/>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -108,13 +124,19 @@ export default function ContactForm() {
                         placeholder="your message..."
                         rows={6}
                         {...field}
+                        required
                       />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-40 bg-teal-600 hover:bg-teal-700 hover:scale-105">Send</Button>
+              <Button
+                type="submit"
+                className="w-40 bg-teal-600 hover:bg-teal-700 hover:scale-105"
+              >
+                Send
+              </Button>
             </form>
           </div>
         </div>
