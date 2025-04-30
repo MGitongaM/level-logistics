@@ -17,7 +17,7 @@ export async function POST(request: Request) {
   try {
     const { data } = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "gitoshmbae@gmail.com",
+      to: ["gitoshmbae@gmail.com","info@levelservices.biz"],
       subject: "New Qoute Inqury from Level Services Logitsics",
       react: NotificationQouteToFounder({
         name:fullName,
