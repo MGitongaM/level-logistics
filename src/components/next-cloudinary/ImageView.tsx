@@ -14,6 +14,7 @@ export default function ImageView({imageSrc,height,width,alt,classNames}:ImagePr
         height={height}
         src={imageSrc}
         alt={alt}
+        sizes="80"
         className={classNames}
     />
     </>

@@ -59,7 +59,7 @@ export default function NavigationBar() {
                   height={400}
                   width={400}
                   alt=""
-                  classNames="object-cover size-20"
+                  classNames="object-cover size-12 lg:size-20"
                 />
                 <p className="font-semibold">Levels Services Logistics</p>
               </Link>
@@ -82,7 +82,7 @@ export default function NavigationBar() {
       {/* mobile menu */}
       <NavigationMenu className="block md:hidden">
         <NavigationMenuList>
-          <div className="w-[98vw] flex justify-between items-center px-4">
+          <div className="w-[99vw] flex justify-between items-center px-1">
             <div className="c">
               <NavigationMenuItem>
                 <Link href={`/`} className="flex items-center">

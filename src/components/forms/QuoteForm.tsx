@@ -26,6 +26,7 @@ import {
 import { useState } from "react";
 import { toast } from "sonner";
 import { Check } from "lucide-react";
+import { Textarea } from "../ui/textarea";
 
 export default function QuoteForm() {
   const [open, setOpen] = useState(false);
@@ -37,6 +38,7 @@ export default function QuoteForm() {
     desitationLocation: z.string(),
     equipmentLoad: z.string(),
     equipmentNumber: z.string(),
+    additionalInformation:z.string(),
   });
   const form = useForm<z.infer<typeof qouteFormSchema>>({
     resolver: zodResolver(qouteFormSchema),
@@ -48,6 +50,7 @@ export default function QuoteForm() {
       desitationLocation: "",
       equipmentLoad: "",
       equipmentNumber: "",
+      additionalInformation:""
     },
   });
   function handleFormSubmit(values: z.infer<typeof qouteFormSchema>) {
@@ -59,6 +62,7 @@ export default function QuoteForm() {
       </div>
     );
     // toast.message("Form Has be submited, please check your email")
+    form.reset()
     setOpen(false);
   }
   return (
@@ -67,7 +71,7 @@ export default function QuoteForm() {
         <AlertDialogTrigger asChild>
           <Button
             type="button"
-            className="bg-green-700 text-lg font-semibold hover:bg-teal-500 hover:scale-110 w-48 h-10"
+            className="bg-green-700 text-lg font-semibold hover:bg-teal-500 hover:scale-110 w-36 md:w-48 h-10"
           >
             Get Quote
           </Button>
@@ -91,7 +95,7 @@ export default function QuoteForm() {
                     <FormItem className="w-full">
                       <FormLabel>Full Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="" type="text" {...field} required />
+                        <Input placeholder="Musa Jabali" type="text" {...field} required />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -104,7 +108,7 @@ export default function QuoteForm() {
                     <FormItem className="w-full">
                       <FormLabel>Phone Number </FormLabel>
                       <FormControl>
-                        <Input placeholder="" type="tel" {...field} required />
+                        <Input placeholder="0700 222 555" type="tel" {...field} required />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -118,7 +122,7 @@ export default function QuoteForm() {
                       <FormLabel>Email Address</FormLabel>
                       <FormControl>
                         <Input
-                          placeholder=""
+                          placeholder="youreamiladdress@mail.com"
                           type="email"
                           {...field}
                           required
@@ -137,7 +141,7 @@ export default function QuoteForm() {
                     <FormItem className="w-full">
                       <FormLabel>Pick Location</FormLabel>
                       <FormControl>
-                        <Input placeholder="" type="text" {...field} required />
+                        <Input placeholder="loaction A" type="text" {...field} required />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -150,7 +154,7 @@ export default function QuoteForm() {
                     <FormItem className="w-full">
                       <FormLabel>Desitation Location</FormLabel>
                       <FormControl>
-                        <Input placeholder="" type="text" {...field} required />
+                        <Input placeholder="location B" type="text" {...field} required />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -165,7 +169,7 @@ export default function QuoteForm() {
                     <FormItem className="w-full">
                       <FormLabel>The Equipment Load</FormLabel>
                       <FormControl>
-                        <Input placeholder="" type="text" {...field} required />
+                        <Input placeholder="Type of equipment to be transported" type="text" {...field} required />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -179,7 +183,7 @@ export default function QuoteForm() {
                       <FormLabel>Number of Equipment </FormLabel>
                       <FormControl>
                         <Input
-                          placeholder=""
+                          placeholder="1"
                           type="number"
                           {...field}
                           required
@@ -190,7 +194,20 @@ export default function QuoteForm() {
                   )}
                 />
               </div>
-              <div className="flex justify-between items-center gap-6 py-4"></div>
+              <div className="flex justify-center items-center gap-6 py-4">
+                <FormField
+                  control={form.control}
+                  name="additionalInformation"
+                  render={({field})=>(
+                    <FormItem className="w-full md:w-10/12 mx-auto">
+                      <FormLabel className="">Additional Information</FormLabel>
+                      <FormControl>
+                        <Textarea rows={4} placeholder="additional information about the load" {...field} />
+                      </FormControl>
+                    </FormItem>
+                  )}
+                />
+              </div>
               <div className="grid place-content-center">
                 <Button
                   type="submit"

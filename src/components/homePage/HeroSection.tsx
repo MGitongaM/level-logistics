@@ -1,5 +1,7 @@
+import Link from "next/link";
 import QuoteForm from "../forms/QuoteForm";
 import HeroCarouselContent from "./HeroCarouselContent";
+import { Button } from "../ui/button";
 
 export default function HeroSection() {
   return (
@@ -18,7 +20,12 @@ export default function HeroSection() {
                 Trust us to handle your transportation needs with efficiency and
                 care.
               </p>
-              <QuoteForm />
+              <div className="flex justify-between items-center gap-2 pr-6">
+                <QuoteForm />
+                <Button asChild variant="outline" className="w-36 md:w-48 h-10 text-lg hover:bg-teal-400 hover:scale-110">
+                  <Link href={`/contact-us`}>Contact Us</Link>
+                </Button>
+              </div>
             </div>
             <div className="w-full  ">
               <HeroCarouselContent />
