@@ -25,11 +25,13 @@ import {
 } from "../ui/alert-dialog";
 import { useState } from "react";
 import { toast } from "sonner";
-import { Check } from "lucide-react";
+// import { Check } from "lucide-react";
 import { Textarea } from "../ui/textarea";
+// import NotificationQouteToFounder from "../emails/NotificationQouteToFounder";
 
 export default function QuoteForm() {
   const [open, setOpen] = useState(false);
+
   const qouteFormSchema = z.object({
     fullName: z.string(),
     emailAddress: z.string(),
@@ -38,7 +40,7 @@ export default function QuoteForm() {
     desitationLocation: z.string(),
     equipmentLoad: z.string(),
     equipmentNumber: z.string(),
-    additionalInformation:z.string(),
+    additionalInformation: z.string(),
   });
   const form = useForm<z.infer<typeof qouteFormSchema>>({
     resolver: zodResolver(qouteFormSchema),
@@ -50,21 +52,33 @@ export default function QuoteForm() {
       desitationLocation: "",
       equipmentLoad: "",
       equipmentNumber: "",
-      additionalInformation:""
+      additionalInformation: "",
     },
   });
-  function handleFormSubmit(values: z.infer<typeof qouteFormSchema>) {
-    console.log("Qoute Form", values);
-    toast(
-      <div className="flex justify-evenly items-center gap-2">
-        <Check className="text-green-400 size-4 font-bold bg-green-100 p-1 rounded-full" />
-        <p>Form Has be submited, please check your email</p>
-      </div>
-    );
-    // toast.message("Form Has be submited, please check your email")
-    form.reset()
+  async function handleFormSubmit(values: z.infer<typeof qouteFormSchema>) {
+    try {
+      await toast.promise(
+        fetch("/api/send-email", {
+          method: "POST",
+          body: JSON.stringify(values),
+        }),
+        {
+          loading: "Processing...",
+          success:
+            "Details submitted, please check your email later about your qoute",
+          error: "Error, please try again later",
+        }
+      );
+    } catch (error) {
+      console.log(
+        "Error sending email notification to founder from client side",
+        error
+      );
+    }
+    form.reset();
     setOpen(false);
   }
+
   return (
     <>
       <AlertDialog open={open} onOpenChange={setOpen}>
@@ -78,7 +92,9 @@ export default function QuoteForm() {
         </AlertDialogTrigger>
         <AlertDialogContent className="min-w-10/12 lg:min-w-6/12">
           <AlertDialogHeader>
-            <AlertDialogTitle className="text-center">Please provide us with the following details</AlertDialogTitle>
+            <AlertDialogTitle className="text-center">
+              Please provide us with the following details
+            </AlertDialogTitle>
             <AlertDialogDescription></AlertDialogDescription>
           </AlertDialogHeader>
 
@@ -95,7 +111,12 @@ export default function QuoteForm() {
                     <FormItem className="w-full">
                       <FormLabel>Full Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="Musa Jabali" type="text" {...field} required />
+                        <Input
+                          placeholder="Musa Jabali"
+                          type="text"
+                          {...field}
+                          required
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -108,7 +129,12 @@ export default function QuoteForm() {
                     <FormItem className="w-full">
                       <FormLabel>Phone Number </FormLabel>
                       <FormControl>
-                        <Input placeholder="0700 222 555" type="tel" {...field} required />
+                        <Input
+                          placeholder="0700 222 555"
+                          type="tel"
+                          {...field}
+                          required
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -141,7 +167,12 @@ export default function QuoteForm() {
                     <FormItem className="w-full">
                       <FormLabel>Pick Location</FormLabel>
                       <FormControl>
-                        <Input placeholder="loaction A" type="text" {...field} required />
+                        <Input
+                          placeholder="loaction A"
+                          type="text"
+                          {...field}
+                          required
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -154,7 +185,12 @@ export default function QuoteForm() {
                     <FormItem className="w-full">
                       <FormLabel>Desitation Location</FormLabel>
                       <FormControl>
-                        <Input placeholder="location B" type="text" {...field} required />
+                        <Input
+                          placeholder="location B"
+                          type="text"
+                          {...field}
+                          required
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -169,7 +205,12 @@ export default function QuoteForm() {
                     <FormItem className="w-full">
                       <FormLabel>The Equipment Load</FormLabel>
                       <FormControl>
-                        <Input placeholder="Type of equipment to be transported" type="text" {...field} required />
+                        <Input
+                          placeholder="Type of equipment to be transported"
+                          type="text"
+                          {...field}
+                          required
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -198,11 +239,15 @@ export default function QuoteForm() {
                 <FormField
                   control={form.control}
                   name="additionalInformation"
-                  render={({field})=>(
+                  render={({ field }) => (
                     <FormItem className="w-full md:w-10/12 mx-auto">
                       <FormLabel className="">Additional Information</FormLabel>
                       <FormControl>
-                        <Textarea rows={4} placeholder="additional information about the load" {...field} />
+                        <Textarea
+                          rows={4}
+                          placeholder="additional information about the load"
+                          {...field}
+                        />
                       </FormControl>
                     </FormItem>
                   )}

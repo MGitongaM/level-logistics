@@ -15,7 +15,6 @@ import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
 import { toast } from "sonner";
-import { Check } from "lucide-react";
 import { useForm } from "react-hook-form";
 
 const contactFormSchema = z.object({
@@ -37,15 +36,29 @@ export default function ContactForm() {
       message: "",
     },
   });
-  function handleContactFormSubmit(values: z.infer<typeof contactFormSchema>) {
-    console.log("Contact Form", values)
-    form.reset()
-    toast(
-      <div className="flex justify-evenly items-center gap-2">
-        <Check className="text-green-400 size-4 font-bold bg-green-100 p-1 rounded-full" />
-        <p>contact form has been submited</p>
-      </div>
-    );
+  async function handleContactFormSubmit(
+    values: z.infer<typeof contactFormSchema>
+  ) {
+    console.log("Contact Form", values);
+    form.reset();
+    try {
+      await toast.promise(
+        fetch("/api/send-contact-email", {
+          method: "POST",
+          body: JSON.stringify(values),
+        }),
+        {
+          loading: "Processing...",
+          success: "Details have been submitted",
+          error: "Error, please try again later",
+        }
+      );
+    } catch (error) {
+      console.log(
+        "Error sending Contact Us Email notification to founder from client side",
+        error
+      );
+    }
   }
   return (
     <section className="bg-teal-900 text-slate-100">
@@ -67,7 +80,7 @@ export default function ContactForm() {
                   <FormItem>
                     <FormLabel>Full Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="Imani Brown" {...field} required/>
+                      <Input placeholder="Imani Brown" {...field} required />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -80,7 +93,11 @@ export default function ContactForm() {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="youreamil@mail.com" {...field} required/>
+                      <Input
+                        placeholder="youreamil@mail.com"
+                        {...field}
+                        required
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -93,7 +110,11 @@ export default function ContactForm() {
                   <FormItem>
                     <FormLabel>Phone Number</FormLabel>
                     <FormControl>
-                      <Input placeholder="0700 999 000 444" {...field} required/>
+                      <Input
+                        placeholder="0700 999 000 444"
+                        {...field}
+                        required
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -106,7 +127,7 @@ export default function ContactForm() {
                   <FormItem>
                     <FormLabel>Subject</FormLabel>
                     <FormControl>
-                      <Input placeholder="Message Topic" {...field} required/>
+                      <Input placeholder="Message Topic" {...field} required />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
