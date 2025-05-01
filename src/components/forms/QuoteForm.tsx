@@ -63,7 +63,7 @@ export default function QuoteForm() {
           body: JSON.stringify(values),
         }),
         {
-          loading: "Processing...",
+          loading: "Submitting...",
           success:
             "Details submitted, please check your email later about your qoute",
           error: "Error, please try again later",

@@ -48,8 +48,8 @@ export default function ContactForm() {
           body: JSON.stringify(values),
         }),
         {
-          loading: "Processing...",
-          success: "Details have been submitted",
+          loading: "Sending...",
+          success: "Details have been sent",
           error: "Error, please try again later",
         }
       );
