@@ -8,7 +8,7 @@ import { getCldOgImageUrl } from "next-cloudinary";
 const url= getCldOgImageUrl({src:"level_services_logistics_servicesPage_OG_image_bbemwj"})
 export const metadata:Metadata={
   title:"Services - Level Services Logistics",
-  description:"Discover our specialized trucking services tailored for the construction sector's unique transportation needs",
+  description:"Discover our specialized trucking services tailored for the construction and energy sectors unique transportation needs",
   openGraph: {
     images: {
       width: 1200,

@@ -10,7 +10,7 @@ const url = getCldOgImageUrl({src: "level_services_logistics_aboutUsPage_OG_imag
 export const metadata: Metadata = {
   title: "About Us - Level Services Logistics",
   description:
-    "At Levels Services Logistics, we are dedicated to providing reliable trucking and transportation services tailored for the construction industry.",
+    "At Levels Services Logistics, we are dedicated to providing reliable trucking and transportation services tailored for the construction and energy industries.",
   openGraph: {
     images: {
       width: 1200,

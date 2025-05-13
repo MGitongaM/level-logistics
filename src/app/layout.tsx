@@ -23,7 +23,7 @@ const url = getCldOgImageUrl({
 export const metadata: Metadata = {
   title: "Level Services Logistics",
   description:
-    "We specialize in delivering equipment and machinery tailored for the construction sector. Trust us to handle your transportation needs with efficiency and care.",
+    "We specialize in delivering equipment and machinery tailored for the construction and energy sectors. Trust us to handle your transportation needs with efficiency and care.",
   openGraph: {
     images: {
       width: 1200,
