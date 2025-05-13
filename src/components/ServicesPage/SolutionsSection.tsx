@@ -11,7 +11,7 @@ export default function SolutionsSection() {
             </p>
             <p className="text-lg">
               At Level Services Logistics, we specialize in the safe and timely delivery
-              of equipment and machinery tailored for the construction sector. Our
+              of equipment and machinery tailored for the construction and energy sectors. Our
               experienced team ensures that your critical assets reach their
               destination without delay
             </p>

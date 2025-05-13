@@ -10,16 +10,21 @@ export default function BenefitSectiom() {
           <div className="w-11/12 mx-auto flex flex-wrap md:flex-nowrap justify-center items-center gap-8">
             <div className="w-full md:w-6/12 space-y-6">
               <h3 className="text-4xl font-bold">
-                Discover the Key Benefits of Choosing Level Services Logitstics for Your
-                Transporation Needs
+                {/* Discover the Key Benefits of Choosing Level Services Logitstics for Your
+                Transporation Needs */}
+                Why Choose Level Services Logistics for Your Transportation
+                Needs?
               </h3>
               <p className="text-lg">
-                At Level Services Logistics, we proritize your operational efficiency.
+                {/* At Level Services Logistics, we proritize your operational efficiency.
                 Our tailored services ensure your equipment arrives on time
-                minimizing delays
+                minimizing delays */}
+                We streamline your operations by minimizing delays and cutting
+                logistics costs keeping your construction projects moving
+                forward smoothly
               </p>
               <div className="w-full flex justify-evenly items-center gap-4 pt-10">
-                <div className=" space-y-4 text-balance">
+                <div className="w-full md:w-5/12 space-y-4 text-balance">
                   <Hourglass className="size-10 text-lime-500" />
                   <p className="text-2xl font-bold">Reduced Downtime</p>
                   <p>
@@ -27,12 +32,14 @@ export default function BenefitSectiom() {
                     schedule and your operations running smoothly
                   </p>
                 </div>
-                <div className=" space-y-4 text-balance">
+                <div className="w-full md:w-5/12 space-y-4 text-balance">
                   <Clipboard className="size-10 text-lime-500" />
                   <p className="text-2xl font-bold">Cost Efficiency</p>
                   <p>
-                    Optimize your logistics budget with our competitive pricing
-                    and reliable service offerings.
+                    {/* Optimize your logistics budget with our competitive pricing
+                    and reliable service offerings. */}
+                    Optimize your logistics budget with competitive rates and
+                    dependable service
                   </p>
                 </div>
               </div>
@@ -59,19 +66,22 @@ export default function BenefitSectiom() {
               </div>
               <div className="max-w-xl mx-auto space-y-4">
                 <p className="text-balance text-center">
-                  Level Services Logistics exceeded our expectations with their prompt
-                  and reliable service. Their teams professionalism made our
-                  equipemet delivery seamless and stress free
+                  {/* Level Services Logistics exceeded our expectations with their
+                  prompt and reliable service. Their teams professionalism made
+                  our equipemet delivery seamless and stress free */}
+                 &ldquo; Level Services Logistics exceeded our expectations with their
+                  prompt and reliable service. Their team&apos;s professionalism made
+                  our equipment deliveries seamless and stress free. &ldquo;
                 </p>
                 <div className="flex justify-center  gap-8">
                   {/* <div className="size-12 rounded-full bg-green-500"></div> */}
                   <ImageView
-                   imageSrc="juma_erarrw"
-                   height={400}
-                   width={400}
-                   alt="level services logistics testimonial"
-                   classNames="object-cover bg-center size-12 rounded-full"
-                   />
+                    imageSrc="juma_erarrw"
+                    height={400}
+                    width={400}
+                    alt="level services logistics testimonial"
+                    classNames="object-cover bg-center size-12 rounded-full"
+                  />
                   <div className="flex-col gap-4">
                     <p className="font-">Juma Wasengo</p>
                     <p className="font-semibold">Manager, ABP Group</p>

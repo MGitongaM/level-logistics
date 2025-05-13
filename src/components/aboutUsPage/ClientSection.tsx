@@ -12,7 +12,7 @@ export default function ClientSection() {
           <p className="">
             Our proven expertise and innovative solutions have earned the
             confidence of industry leaders, driving efficiency and safety across
-            the petroleum supply chain.
+            the petroleum supply chain
           </p>
         </div>
         <div className="flex flex-wrap  justify-evenly items-center gap-x-12 gap-y-12 pt-12">

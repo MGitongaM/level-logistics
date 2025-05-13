@@ -10,7 +10,7 @@ export default function NeedsSection() {
           </h2>
           <p className="text-lg">
             At Level Services Logistics, we provide a full range of trucking and
-            transportation services tailored for the construction sector. Our
+            transportation services tailored for the construction and energy sectors. Our
             expertise ensures your equipment and machinery are delivered safely
             and efficiency
           </p>
@@ -26,7 +26,7 @@ export default function NeedsSection() {
           <div className="w-full md:w-3/12 space-y-4 text-balance">
             <CalendarRange className="size-10 text-lime-500" />
             <h3 className="text-2xl font-bold">
-              Reliable Delivery for the Construction Industry{" "}
+              Reliable and Dependable Delivery Solutions{" "}
             </h3>
             <p>
               Our logistics solutions are designed for relability and speed{" "}

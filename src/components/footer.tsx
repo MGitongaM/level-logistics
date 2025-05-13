@@ -7,7 +7,7 @@ export default function Footer() {
       <footer className="conatiner px-4 pt-20 pb-4">
         {/* <div className="flex justify-between items-center bg-green-800 text-slate-100 rounded-xl px-8 py-10"> */}
         <div className="flex flex-wrap md:flex-nowrap justify-between items-center gap-y-8 bg-teal-950 text-slate-100 rounded-xl px-8 py-10">
-          <div className="w-full md:w-5/12 space-y-4">
+          <div className="w-full md:w-4/12 space-y-4">
             <Link href={`/`} className="flex items-center">
               <ImageView
                 // imageSrc="level_services_logo_bg-transparent_ellvje"
@@ -20,11 +20,14 @@ export default function Footer() {
               <p className="font-semibold">Levels Services Logistics</p>
             </Link>
             <p className="text-3xl md:text-5xl leading-12">
+              {/* Your Trusted Partner in Logistics Solutions */}
               Your Trusted Partner in Logistics Solutions
             </p>
-            <p className="text-xs">
-              Delivery excellence in trucking and transportation for the
-              construction industry
+            <p className="text-xs text-balance">
+              {/* Delivery excellence in trucking and transportation for the
+              construction industry */}
+              Delivering excellence in trucking and equipment transport across
+              Kenya’s construction sector.
             </p>
           </div>
           <div className="flex justify-between items-start gap-x-8 text-sm">

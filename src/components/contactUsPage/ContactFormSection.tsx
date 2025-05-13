@@ -66,7 +66,7 @@ export default function ContactForm() {
         <div className="flex flex-wrap md:flex-nowrap justify-evenly items-start gap-8 px-8 py-20 ">
           <div className="w-full md:w-4/12 space-y-4">
             <p className="text-4xl font-bold">Get in Touch</p>
-            <p className="text-lg">We&apos;d love to hear from vou!</p>
+            <p className="text-lg">We&apos;d love to hear from you!</p>
           </div>
           <div className="w-full md:w-6/12">
             <form

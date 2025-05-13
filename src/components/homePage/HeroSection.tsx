@@ -15,14 +15,22 @@ export default function HeroSection() {
                 Reliable Transportation Solutions For Your Business
               </h1>
               <p className=" leading-8 text-xl font-semibold">
-                At Level Services Logistics, we specialize in delivering
+                {/* At Level Services Logistics, we specialize in delivering
                 equipment and machinery tailored for the construction sector.
                 Trust us to handle your transportation needs with efficiency and
-                care.
+                care. */}
+                At Level Services Logistics, we specialize in the efficient and
+                secure delivery of equipment and machinery across Kenya. With a
+                strong focus on the construction sector, we ensure your cargo
+                reaches its destination on time and in perfect condition
               </p>
               <div className="flex justify-between items-center gap-2 pr-6">
                 <QuoteForm />
-                <Button asChild variant="outline" className="w-36 md:w-48 h-10 text-lg hover:bg-teal-400 hover:scale-110">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="w-36 md:w-48 h-10 text-lg hover:bg-teal-400 hover:scale-110"
+                >
                   <Link href={`/contact-us`}>Contact Us</Link>
                 </Button>
               </div>

@@ -12,9 +12,9 @@ export default function JourneySection() {
             </h2>
             <p className="text-lg  leading-8">
               Founded with a commitment to reliability, Level Services Logistics has
-              grown to become a trusted partner in the construction sector. our
+              grown to become a trusted partner in the construction and engergy sectors. Our
               mission is to provide sate, efficient, and timely transportation
-              solutions that empower our clients to succeed.
+              solutions that empower our clients to succeed
             </p>
           </div>
           <div className="w-full xl:w-6/12 mx-auto">
