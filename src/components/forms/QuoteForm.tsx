@@ -27,6 +27,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 // import { Check } from "lucide-react";
 import { Textarea } from "../ui/textarea";
+import MapView from "../maps/MapView";
 // import NotificationQouteToFounder from "../emails/NotificationQouteToFounder";
 
 export default function QuoteForm() {
@@ -90,14 +91,14 @@ export default function QuoteForm() {
             Get Quote
           </Button>
         </AlertDialogTrigger>
-        <AlertDialogContent className="min-w-10/12 lg:min-w-6/12">
+        <AlertDialogContent className="min-w-10/12 lg:min-w-6/12 h-[80dvh] overflow-y-auto">
           <AlertDialogHeader>
             <AlertDialogTitle className="text-center">
               Please provide us with the following details
             </AlertDialogTitle>
             <AlertDialogDescription></AlertDialogDescription>
           </AlertDialogHeader>
-
+          <MapView/>
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(handleFormSubmit)}
