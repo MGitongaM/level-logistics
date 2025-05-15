@@ -31,7 +31,9 @@ import MapView from "../maps/MapView";
 // import NotificationQouteToFounder from "../emails/NotificationQouteToFounder";
 
 export default function QuoteForm() {
+
   const [open, setOpen] = useState(false);
+  const [routeData, setRouteData] = useState(null)
 
   const qouteFormSchema = z.object({
     fullName: z.string(),
@@ -58,7 +60,18 @@ export default function QuoteForm() {
   });
   async function handleFormSubmit(values: z.infer<typeof qouteFormSchema>) {
     try {
-      await toast.promise(
+      const response= await fetch(`api/calculate-route`,{
+        method:'POST',
+        headers:{
+           'Content-Type': 'application/json',
+        },
+        body:JSON.stringify({origin:values.pickLocation, destination:values.desitationLocation})
+      }) 
+      const data=await response.json()
+      setRouteData(data.routeData)
+      console.log("FROM QOUTE-FORM",data.routeData)
+      console.log("FROM QUOTE FORM STATE",routeData)
+       toast.promise(
         fetch("/api/send-email", {
           method: "POST",
           body: JSON.stringify(values),
@@ -77,7 +90,7 @@ export default function QuoteForm() {
       );
     }
     form.reset();
-    setOpen(false);
+    // setOpen(false);
   }
 
   return (
@@ -98,7 +111,9 @@ export default function QuoteForm() {
             </AlertDialogTitle>
             <AlertDialogDescription></AlertDialogDescription>
           </AlertDialogHeader>
+
           <MapView/>
+          
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(handleFormSubmit)}
