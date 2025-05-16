@@ -95,11 +95,11 @@ async function calculateRoute(origin:Coordinates,destination:Coordinates,apiKey:
             const route=data.routes[0]
             const summary=route.summary
 
-            const geometry=[]
+            const geometry: unknown[][]=[]
             if(route.legs  && route.legs.length>0){
-                route.legs.forEach(leg=>{
+                route.legs.forEach((leg: { points: { longitude: unknown; latitude: unknown; }[]; })=>{
                     if(leg.points){
-                        leg.points.forEach(point=>{
+                        leg.points.forEach((point: { longitude: unknown; latitude: unknown; })=>{
                             geometry.push([point.longitude,point.latitude])
                         })
                     }
