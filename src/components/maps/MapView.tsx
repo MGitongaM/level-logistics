@@ -20,7 +20,7 @@ export default function MapView() {
     // kenya longititude and latitude cordinates 
     // const initialState = { lng: 38.0, lat: 1.0, zoom: 9 };
     // nairobi longititude and latitude cordinates 
-    const initialState = { lng: 36.817223, lat: -1.286389, zoom: 9 };
+    const initialState = { lng: 36.817223, lat: -1.286389, zoom: 5 };
     const map = new maplibre.Map({
       container: mapContainer.current,
       style: `${mapStyle}?apiKey=${geoApiKey}`,
