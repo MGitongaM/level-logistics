@@ -27,7 +27,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 // import { Check } from "lucide-react";
 import { Textarea } from "../ui/textarea";
-import MapView from "../maps/MapView";
+// import MapView from "../maps/MapView";
 // import NotificationQouteToFounder from "../emails/NotificationQouteToFounder";
 
 export default function QuoteForm() {
@@ -112,7 +112,7 @@ export default function QuoteForm() {
             <AlertDialogDescription></AlertDialogDescription>
           </AlertDialogHeader>
 
-          <MapView/>
+          {/* <MapView/> */}
           
           <Form {...form}>
             <form
